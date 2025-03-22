@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ionova - AI-Driven Biophysics Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Replace with your actual logo -->
     <link rel="icon" type="image/png" href="logo.png">
     <style>
-        /* Updated CSS with modern enhancements */
         * {
             margin: 0;
             padding: 0;
@@ -28,22 +26,18 @@
             overflow-x: hidden;
         }
 
-    <style>
-        /* Updated Hero Section */
         .hero {
             background: white;
-            padding: 80px 20px 40px;
+            padding: 100px 20px 60px;
             text-align: center;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
         }
 
         .logo {
-            width: 220px;
-            margin: 0 auto 40px;
+            width: 320px;
+            margin: 0 auto 50px;
             display: block;
         }
 
-        /* Section Styles */
         .section {
             padding: 100px 20px;
         }
@@ -64,7 +58,6 @@
             text-align: center;
         }
 
-        /* Grid Systems */
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -84,7 +77,6 @@
             transform: translateY(-5px);
         }
 
-        /* Team Section */
         .team-card {
             text-align: center;
             padding: 30px;
@@ -98,24 +90,16 @@
             object-fit: cover;
         }
 
-        /* Typography Enhancements */
-        .stat-number {
-            font-size: 2.5rem;
-            color: var(--accent-teal);
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        /* Buttons */
         .cta-button {
-            display: inline-block;
+            display: block;
+            width: max-content;
             padding: 15px 40px;
             background: var(--accent-teal);
             color: white;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            margin-top: 20px;
+            margin: 30px auto 0;
             transition: all 0.3s ease;
         }
 
@@ -124,13 +108,23 @@
             box-shadow: 0 5px 15px rgba(0,172,193,0.3);
         }
 
+        .advisor-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        .advisor-card p.position {
+            color: var(--accent-teal);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
             h2 {
                 font-size: 2rem;
+            }
+            .logo {
+                width: 260px;
             }
         }
     </style>
@@ -139,58 +133,43 @@
     <!-- Hero Section -->
     <section class="hero">
         <img src="logo.png" alt="Ionova logo" class="logo">
-        <a href="#contact" class="cta-button">Schedule Demo</a>
-    </section>
-
-    <!-- Problem Section -->
+        <a href="#contact" class="cta-button">Schedule a     <!-- Advisors Section -->
     <section class="section section-dark">
         <div class="container">
-            <h2>The Critical Challenge</h2>
+            <h2>Scientific Advisors</h2>
             <div class="card-grid">
-                <div class="card">
-                    <div class="stat-number">90%</div>
-                    <h3>Clinical Trial Failure Rate</h3>
-                    <p>Due to poor target insights in traditional methods</p>
+                <div class="card advisor-card">
+                    <h3>Bruce P. Bean, PhD</h3>
+                    <p class="position">Professor of Neurobiology</p>
+                    <p>Harvard Medical School<br>
+                    Expertise: Ion channel pharmacology & neuronal signaling</p>
                 </div>
-                <div class="card">
-                    <div class="stat-number">$500K+</div>
-                    <h3>Per Target Cost</h3>
-                    <p>Experimental studies exceeding half-million dollars</p>
+                <div class="card advisor-card">
+                    <h3>Manu Ben-Johny, PhD</h3>
+                    <p class="position">Assistant Professor</p>
+                    <p>Columbia University Medical Center<br>
+                    Expertise: Calcium channel regulation & optogenetics</p>
                 </div>
-                <div class="card">
-                    <div class="stat-number">5-7 Years</div>
-                    <h3>Development Timeline</h3>
-                    <p>Slow screening delays life-saving treatments</p>
+                <div class="card advisor-card">
+                    <h3>Leigh D. Plant, PhD</h3>
+                    <p class="position">Associate Professor</p>
+                    <p>Northeastern University<br>
+                    Expertise: Cardiac ion channels & drug discovery</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Our AI-Driven Solution</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Proprietary AI/ML Models</h3>
-                    <p>Simulate ion channel behavior & predict drug interactions at scale</p>
-                </div>
-                <div class="card">
-                    <h3>Virtual Screening</h3>
-                    <p>High-throughput identification of best-in-class candidates</p>
-                </div>
-                <div class="card">
-                    <h3>Predictive Analytics</h3>
-                    <p>Accurate modeling of ion channel kinetics & binding affinity</p>
+                <div class="card advisor-card">
+                    <h3>Diomedes Logothetis, PhD</h3>
+                    <p class="position">Professor & Chair</p>
+                    <p>Northeastern University<br>
+                    Expertise: Structural biology of ion channels</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Leadership Section -->
-    <section class="section section-dark">
+    <section class="section">
         <div class="container">
-            <h2>Our Leadership</h2>
+            <h2>Executive Team</h2>
             <div class="card-grid">
                 <div class="team-card card">
                     <img src="ceo-photo.jpg" alt="Hannah Wimpy">
@@ -199,7 +178,7 @@
                     <p>Computational Biophysics Researcher<br>
                     B.S. Candidate, Award-winning Researcher<br>
                     Full-stack Developer & Data Analyst<br>
-                    Previous ventures: Structured, Notion, Evernote</p>
+                    Previous clients: Structured, Notion, Evernote</p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/hannahgwimpy/" 
                            target="_blank" 
