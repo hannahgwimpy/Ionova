@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ionova - AI-Driven Biophysics Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Replace with your actual logo -->
+    <link rel="icon" type="image/png" href="logo.png">
     <style>
-        /* Reset and Base Styles */
+        /* Updated CSS with modern enhancements */
         * {
             margin: 0;
             padding: 0;
@@ -23,30 +25,34 @@
         body {
             line-height: 1.6;
             color: #333;
+            overflow-x: hidden;
         }
 
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary-blue), #0d47a1);
             color: white;
-            padding: 120px 20px;
+            padding: 150px 20px;
             text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 50px;
         }
 
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 40px;
+            letter-spacing: -1px;
         }
 
         /* Section Styles */
         .section {
-            padding: 80px 20px;
+            padding: 100px 20px;
         }
 
         .section-dark {
@@ -58,19 +64,31 @@
             margin: 0 auto;
         }
 
-        /* Mission Grid */
-        .mission-grid {
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--primary-blue);
+            text-align: center;
+        }
+
+        /* Grid Systems */
+        .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 40px;
         }
 
-        .mission-card {
+        .card {
             background: white;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         /* Team Section */
@@ -84,12 +102,42 @@
             height: 200px;
             border-radius: 50%;
             margin-bottom: 20px;
+            object-fit: cover;
         }
 
-        /* Responsive Design */
+        /* Typography Enhancements */
+        .stat-number {
+            font-size: 2.5rem;
+            color: var(--accent-teal);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        /* Buttons */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--accent-teal);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,172,193,0.3);
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
             }
         }
     </style>
@@ -97,6 +145,8 @@
 <body>
     <!-- Hero Section -->
     <section class="hero">
+        <!-- Add your logo -->
+        <img src="logo.png" alt="Ionova logo" class="logo">
         <h1>Revolutionizing Ion Channel Drug Discovery</h1>
         <p>AI-driven biophysics solutions to accelerate therapeutic development</p>
         <a href="#contact" class="cta-button">Schedule Demo</a>
@@ -105,72 +155,102 @@
     <!-- Problem Section -->
     <section class="section section-dark">
         <div class="container">
-            <h2>The Challenge</h2>
-            <div class="mission-grid">
-                <div class="mission-card">
-                    <h3>90% Clinical Failure Rate</h3>
-                    <p>Traditional methods lack insights into ion channel kinetics</p>
+            <h2>The Critical Challenge</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="stat-number">90%</div>
+                    <h3>Clinical Trial Failure Rate</h3>
+                    <p>Due to poor target insights in traditional methods</p>
                 </div>
-                <div class="mission-card">
-                    <h3>$500K+/Target Cost</h3>
-                    <p>Experimental studies are prohibitively expensive</p>
+                <div class="card">
+                    <div class="stat-number">$500K+</div>
+                    <h3>Per Target Cost</h3>
+                    <p>Experimental studies exceeding half-million dollars</p>
                 </div>
-                <div class="mission-card">
-                    <h3>5-7 Year Timelines</h3>
-                    <p>Slow screening processes delay life-saving treatments</p>
+                <div class="card">
+                    <div class="stat-number">5-7 Years</div>
+                    <h3>Development Timeline</h3>
+                    <p>Slow screening delays life-saving treatments</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission Section -->
+    <!-- Solution Section -->
     <section class="section">
         <div class="container">
-            <h2>Our Mission</h2>
-            <p>Developing AI/ML models that accurately simulate ion channel behavior to:</p>
-            <ul class="mission-grid">
-                <li class="mission-card">Reduce R&D costs by 50%</li>
-                <li class="mission-card">Accelerate timelines by 30-40%</li>
-                <li class="mission-card">Improve clinical success rates</li>
-            </ul>
+            <h2>Our AI-Driven Solution</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Proprietary AI/ML Models</h3>
+                    <p>Simulate ion channel behavior & predict drug interactions at scale</p>
+                </div>
+                <div class="card">
+                    <h3>Virtual Screening</h3>
+                    <p>High-throughput identification of best-in-class candidates</p>
+                </div>
+                <div class="card">
+                    <h3>Predictive Analytics</h3>
+                    <p>Accurate modeling of ion channel kinetics & binding affinity</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Team Section -->
+    <!-- Leadership Section -->
     <section class="section section-dark">
         <div class="container">
-            <h2>Leadership</h2>
-            <div class="mission-grid">
-                <div class="team-card">
+            <h2>Our Leadership</h2>
+            <div class="card-grid">
+                <div class="team-card card">
                     <img src="ceo-photo.jpg" alt="Hannah Wimpy">
                     <h3>Hannah Wimpy</h3>
                     <p>CEO & Founder</p>
-                    <p>Computational Biophysics researcher & software entrepreneur</p>
+                    <p>Computational Biophysics Researcher<br>
+                    B.S. Candidate, Award-winning Researcher<br>
+                    Full-stack Developer & Data Analyst<br>
+                    Previous ventures: Structured, Notion, Evernote</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/hannahgwimpy/" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="cta-button" 
+                           style="padding: 8px 20px; margin: 10px;">
+                            <i class="fab fa-linkedin"></i> View Profile
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Validation Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Trusted Partnerships</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Harvard Medical School</h3>
+                    <p>Collaborating with Bruce Bean's Lab for model validation</p>
+                </div>
+                <div class="card">
+                    <h3>Topo Therapeutics</h3>
+                    <p>Joint research initiatives in ion channel blockers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
-        // Smooth scrolling for navigation
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
         });
-
-        // Mobile menu toggle
-        function toggleMenu() {
-            const nav = document.querySelector('.nav-links');
-            nav.classList.toggle('active');
-        }
     </script>
 </body>
 </html>
