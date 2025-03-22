@@ -28,26 +28,19 @@
             overflow-x: hidden;
         }
 
-        /* Hero Section */
+    <style>
+        /* Updated Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary-blue), #0d47a1);
-            color: white;
-            padding: 150px 20px;
+            background: white;
+            padding: 80px 20px 40px;
             text-align: center;
-            position: relative;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
         }
 
         .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            height: 50px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
+            width: 220px;
+            margin: 0 auto 40px;
+            display: block;
         }
 
         /* Section Styles */
@@ -145,10 +138,7 @@
 <body>
     <!-- Hero Section -->
     <section class="hero">
-        <!-- Add your logo -->
         <img src="logo.png" alt="Ionova logo" class="logo">
-        <h1>Revolutionizing Ion Channel Drug Discovery</h1>
-        <p>AI-driven biophysics solutions to accelerate therapeutic development</p>
         <a href="#contact" class="cta-button">Schedule Demo</a>
     </section>
 
