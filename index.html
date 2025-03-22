@@ -28,13 +28,13 @@
 
         .hero {
             background: white;
-            padding: 100px 20px 60px;
+            padding: 120px 20px 60px;
             text-align: center;
         }
 
         .logo {
-            width: 320px;
-            margin: 0 auto 50px;
+            width: 400px;
+            margin: 0 auto 40px;
             display: block;
         }
 
@@ -91,15 +91,14 @@
         }
 
         .cta-button {
-            display: block;
-            width: max-content;
+            display: inline-block;
             padding: 15px 40px;
             background: var(--accent-teal);
             color: white;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            margin: 30px auto 0;
+            margin-top: 20px;
             transition: all 0.3s ease;
         }
 
@@ -120,11 +119,16 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                padding: 80px 20px 40px;
+            }
+
+            .logo {
+                width: 280px;
+            }
+
             h2 {
                 font-size: 2rem;
-            }
-            .logo {
-                width: 260px;
             }
         }
     </style>
@@ -133,7 +137,55 @@
     <!-- Hero Section -->
     <section class="hero">
         <img src="logo.png" alt="Ionova logo" class="logo">
-        <a href="#contact" class="cta-button">Schedule a     <!-- Advisors Section -->
+        <a href="#contact" class="cta-button">Schedule Demo</a>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2>The Critical Challenge</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="stat-number">90%</div>
+                    <h3>Clinical Trial Failure Rate</h3>
+                    <p>Due to poor target insights in traditional methods</p>
+                </div>
+                <div class="card">
+                    <div class="stat-number">$500K+</div>
+                    <h3>Per Target Cost</h3>
+                    <p>Experimental studies exceeding half-million dollars</p>
+                </div>
+                <div class="card">
+                    <div class="stat-number">5-7 Years</div>
+                    <h3>Development Timeline</h3>
+                    <p>Slow screening delays life-saving treatments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Our AI-Driven Solution</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Proprietary AI/ML Models</h3>
+                    <p>Simulate ion channel behavior & predict drug interactions at scale</p>
+                </div>
+                <div class="card">
+                    <h3>Virtual Screening</h3>
+                    <p>High-throughput identification of best-in-class candidates</p>
+                </div>
+                <div class="card">
+                    <h3>Predictive Analytics</h3>
+                    <p>Accurate modeling of ion channel kinetics & binding affinity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisors Section -->
     <section class="section section-dark">
         <div class="container">
             <h2>Scientific Advisors</h2>
@@ -166,10 +218,10 @@
         </div>
     </section>
 
-    <!-- Leadership Section -->
+    <!-- Team Section -->
     <section class="section">
         <div class="container">
-            <h2>Executive Team</h2>
+            <h2>Our Team</h2>
             <div class="card-grid">
                 <div class="team-card card">
                     <img src="ceo-photo.jpg" alt="Hannah Wimpy">
@@ -178,7 +230,7 @@
                     <p>Computational Biophysics Researcher<br>
                     B.S. Candidate, Award-winning Researcher<br>
                     Full-stack Developer & Data Analyst<br>
-                    Previous clients: Structured, Notion, Evernote</p>
+                    Previous ventures: Structured, Notion, Evernote</p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/hannahgwimpy/" 
                            target="_blank" 
@@ -194,7 +246,7 @@
     </section>
 
     <!-- Validation Section -->
-    <section class="section">
+    <section class="section section-dark">
         <div class="container">
             <h2>Trusted Partnerships</h2>
             <div class="card-grid">
