@@ -5,142 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ionova - Biophysics Software Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="logo.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        :root {
-            --primary-blue: #1a237e;
-            --accent-teal: #00acc1;
-            --light-bg: #f8f9fa;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
-        }
-
-        .hero {
-            background: white;
-            padding: 120px 20px 60px;
-            text-align: center;
-        }
-
-        .logo {
-            width: 400px;
-            margin: 0 auto 40px;
-            display: block;
-        }
-
-        .section {
-            padding: 100px 20px;
-        }
-
-        .section-dark {
-            background: var(--light-bg);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            color: var(--primary-blue);
-            text-align: center;
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .team-card {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .team-card img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 40px;
-            background: var(--accent-teal);
-            color: white;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0,172,193,0.3);
-        }
-
-        .advisor-card h3 {
-            color: var(--primary-blue);
-            margin-bottom: 10px;
-        }
-
-        .advisor-card p.position {
-            color: var(--accent-teal);
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                padding: 80px 20px 40px;
-            }
-
-            .logo {
-                width: 280px;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 <body>
-    <!-- Hero Section -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <section class="hero">
-        <img src="logo.png" alt="Ionova logo" class="logo">
-        <a href="#contact" class="cta-button">Schedule Demo</a>
+        <img src="img/logo.png" alt="Ionova logo" class="logo">
+        <a href="contact.html" class="cta-button">Schedule Demo</a>
     </section>
 
-    <!-- Problem Section -->
     <section class="section section-dark">
         <div class="container">
             <h2>The Biophysics Challenge</h2>
@@ -148,130 +31,40 @@
                 <div class="card">
                     <div class="stat-number">90%</div>
                     <h3>High Failure Rates</h3>
-                    <p>Traditional methods often lack the precision needed for complex biophysical systems.</p>
+                    <p>Traditional methods often lack precision for complex systems</p>
                 </div>
                 <div class="card">
                     <div class="stat-number">$500K+</div>
                     <h3>Costly Experiments</h3>
-                    <p>Experimental studies can be prohibitively expensive and time-consuming.</p>
+                    <p>Prohibitively expensive experimental studies</p>
                 </div>
                 <div class="card">
                     <div class="stat-number">5-7 Years</div>
                     <h3>Slow Timelines</h3>
-                    <p>Lengthy development cycles delay breakthroughs in therapeutics and research.</p>
+                    <p>Lengthy development cycles delay breakthroughs</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Solution Section -->
     <section class="section">
         <div class="container">
-            <h2>Our Software Solutions</h2>
+            <h2>Our Approach</h2>
             <div class="card-grid">
                 <div class="card">
-                    <h3>AI-Driven Modeling</h3>
-                    <p>Proprietary AI/ML models to simulate complex biophysical systems, from ion channels to protein interactions.</p>
+                    <h3>Cross-Domain Expertise</h3>
+                    <p>Specializing in ion channels, protein interactions, and molecular dynamics</p>
                 </div>
                 <div class="card">
-                    <h3>High-Throughput Screening</h3>
-                    <p>Virtual screening platforms to identify and prioritize compounds with therapeutic potential.</p>
+                    <h3>AI-Powered Solutions</h3>
+                    <p>Machine learning models tailored to biophysical systems</p>
                 </div>
                 <div class="card">
-                    <h3>Predictive Analytics</h3>
-                    <p>Advanced tools for predicting molecular behavior, binding affinity, and system kinetics.</p>
+                    <h3>Validation Partnerships</h3>
+                    <p>Collaborating with leading academic labs</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Advisors Section -->
-    <section class="section section-dark">
-        <div class="container">
-            <h2>Scientific Advisors</h2>
-            <div class="card-grid">
-                <div class="card advisor-card">
-                    <h3>Bruce P. Bean, PhD</h3>
-                    <p class="position">Professor of Neurobiology</p>
-                    <p>Harvard Medical School<br>
-                    Expertise: Ion channel pharmacology & neuronal signaling</p>
-                </div>
-                <div class="card advisor-card">
-                    <h3>Manu Ben-Johny, PhD</h3>
-                    <p class="position">Assistant Professor</p>
-                    <p>Columbia University Medical Center<br>
-                    Expertise: Calcium channel regulation & optogenetics</p>
-                </div>
-                <div class="card advisor-card">
-                    <h3>Leigh D. Plant, PhD</h3>
-                    <p class="position">Associate Professor</p>
-                    <p>Northeastern University<br>
-                    Expertise: Cardiac ion channels & drug discovery</p>
-                </div>
-                <div class="card advisor-card">
-                    <h3>Diomedes Logothetis, PhD</h3>
-                    <p class="position">Professor & Chair</p>
-                    <p>Northeastern University<br>
-                    Expertise: Structural biology of ion channels</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Our Team</h2>
-            <div class="card-grid">
-                <div class="team-card card">
-                    <img src="ceo-photo.jpg" alt="Hannah Wimpy">
-                    <h3>Hannah Wimpy</h3>
-                    <p>CEO & Founder</p>
-                    <p>Computational Biophysics Researcher<br>
-                    B.S. Candidate, Award-winning Researcher<br>
-                    Full-stack Developer & Data Analyst<br>
-                    Previous ventures: Structured, Notion, Evernote</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/hannahgwimpy/" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           class="cta-button" 
-                           style="padding: 8px 20px; margin: 10px;">
-                            <i class="fab fa-linkedin"></i> View Profile
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partnerships Section -->
-    <section class="section section-dark">
-        <div class="container">
-            <h2>Trusted Partnerships</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Harvard Medical School</h3>
-                    <p>Collaborating on advanced biophysical modeling and validation.</p>
-                </div>
-                <div class="card">
-                    <h3>Topo Therapeutics</h3>
-                    <p>Joint research initiatives in molecular screening and drug discovery.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
