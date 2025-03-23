@@ -201,3 +201,139 @@ body {
         padding: 1rem;
     }
 }
+
+/* ===== USP Grid ===== */
+.usp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.usp {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+}
+
+.usp:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.usp i {
+    color: var(--vista-blue);
+    margin-right: 0.75rem;
+}
+
+/* ===== Stats Section ===== */
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--yale-blue);
+    margin: 1rem 0;
+    text-shadow: 0 2px 4px rgba(20, 63, 121, 0.1);
+}
+
+/* ===== Icon Enhancements ===== */
+.card i {
+    color: var(--yinmn-blue);
+    margin: 1.5rem 0;
+    transition: transform 0.3s ease;
+}
+
+.card:hover i {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* Section Accent Color */
+.section-accent {
+    background: linear-gradient(135deg, 
+        rgba(122, 152, 201, 0.1) 0%,
+        rgba(57, 86, 122, 0.05) 100%);
+    border-top: 1px solid rgba(122, 152, 201, 0.15);
+    border-bottom: 1px solid rgba(122, 152, 201, 0.15);
+}
+
+/* ===== Footer Enhancements ===== */
+.footer {
+    background: var(--yale-blue);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-logo {
+    width: 180px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 1;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--vista-blue);
+    transform: translateY(-3px);
+}
+
+.partner-logos {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.partner-logos img {
+    height: 40px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.partner-logos img:hover {
+    opacity: 1;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 3rem;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive Tweaks ===== */
+@media (max-width: 768px) {
+    .usp-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-number {
+        font-size: 2.75rem;
+    }
+    
+    .partner-logos {
+        flex-direction: column;
+    }
+}
