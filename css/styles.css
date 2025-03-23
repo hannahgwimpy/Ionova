@@ -79,13 +79,15 @@ body {
 
 /* ===== Modern Hero Section ===== */
 .hero {
+    background: white;
+    padding: 120px 20px 80px;
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Added for horizontal centering */
+    justify-content: center;
     position: relative;
-    padding: 12rem 5vw;
-    background: linear-gradient(145deg, 
-        rgba(20, 63, 121, 0.03) 0%,
-        rgba(57, 86, 122, 0.08) 50%,
-        rgba(122, 152, 201, 0.15) 100%);
-    overflow: hidden;
 }
 
 .hero::after {
@@ -97,10 +99,19 @@ body {
 }
 
 .logo {
-    width: min(90%, 680px);
-    margin: 0 auto 4rem;
-    filter: drop-shadow(0 8px 24px rgba(20, 63, 121, 0.15));
-    animation: float 6s ease-in-out infinite;
+    width: min(90%, 600px);
+    margin: 0 auto 20px; /* Updated margin */
+    display: block;
+    text-align: center; /* Ensures nested elements are centered */
+}
+
+.trademark {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--yale-blue);
+    letter-spacing: 0.05em;
+    margin-top: -15px; /* Adjust based on your logo layout */
+    font-weight: 500;
 }
 
 /* ===== Modern Card System ===== */
