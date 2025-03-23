@@ -348,3 +348,28 @@ body {
         flex-direction: column;
     }
 }
+
+/* Add this to your styles.css */
+.trademark-notice {
+    background: rgba(var(--yale-blue-rgb), 0.08);
+    color: var(--yale-blue);
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-top: 1px solid rgba(var(--yale-blue-rgb), 0.1);
+    margin-top: 80px;
+}
+
+.trademark-notice .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Adjust body spacing */
+body {
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
