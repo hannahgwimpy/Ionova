@@ -378,3 +378,22 @@ body {
     margin-top: 40px;
     margin-bottom: 30px;
 }
+
+<style>
+.team-card img {
+    width: 200px;         /* Fixed width */
+    height: 200px;        /* Fixed height for square aspect */
+    object-fit: cover;    /* Ensures images cover the area without stretching */
+    border-radius: 50%;   /* Optional: Makes images circular */
+    margin: 0 auto;       /* Centers the image horizontally in the card */
+    display: block;       /* Needed for margin auto to work */
+}
+
+/* Adjust card grid layout if needed */
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+</style>
